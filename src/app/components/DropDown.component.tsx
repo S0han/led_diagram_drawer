@@ -1,3 +1,4 @@
+'use client'
 import ToggleBtn from './ToggleBtn.component';
 
 export default function DropDown() {

@@ -1,5 +1,11 @@
-export default function ToggleBtn() {
+export default function ToggleBtn({ options }) {
     return (
-        <div></div>
+        <div className="toggle-options">
+           {
+                options.map((option) => (
+                    <button key={option}>{option}</button>
+                ))   
+            }
+        </div>
     )
 }

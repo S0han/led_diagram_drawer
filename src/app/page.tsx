@@ -4,7 +4,7 @@ import Configuration from './components/Configuration.component';
 import Papa from 'papaparse';
 
 export default function Home() {
-  const [data, setData] = useState('');
+  const [data, setData] = useState<any[]>([]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -15,9 +15,8 @@ export default function Home() {
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }
-        
-        const csvText = await response.text();
-        console.log('CSV content fetched:', csvText);  
+    
+        const csvText = await response.text(); 
 
         Papa.parse(csvText, {
           header: true,  
@@ -31,7 +30,7 @@ export default function Home() {
                 )
               )
             );
-            setData(JSON.stringify(sanitizedData));  
+            setData(sanitizedData);
             console.log('Parsed JSON data:', sanitizedData);  
           },
         });

@@ -2,7 +2,7 @@ import DropDown from './DropDown.component';
 import ToggleBtn from './ToggleBtn.component';
 import Inputfield from './InputField.component';
 
-export default function Configuration() {
+export default function Configuration({ dropDownData }) {
     return (
         <div className='configuration-box'>
             <DropDown />

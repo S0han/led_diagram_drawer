@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Equipment Selection App
 
-## Getting Started
+##About
+Create a user-friendly mini application that provides a PDF drawing to install LED screens. Think of it as a digital drawing tool that automatically creates installation diagrams based on user selections and letting user to download it in a PDF format.
+* You can use the premade wireframe as a reference but you we’d like you to involve your creativity as well
 
-First, run the development server:
+## Overview
+- Brief description of the app and its purpose.
+- Mention how the app interacts with the CSV file as a database to allow users to make selections.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Equipment Selection from CSV file:
+- Dropdown menus to select:
+  - [ ] LED Screen model
+  - [ ] Mount type
+  - [ ] Media Player (mini computer)
+  - [ ] Receptacle box (power outlet box)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Drawing Display:
+- Simple diagram of the LED screen:
+  - [ ] Automatically update based on user selection.
+  - [ ] Display accurate measurements and dimensions.
+  - [ ] Show dashed box for the power outlet location.
+  - [ ] Indicate the distance from the floor to screen center.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Configuration Options:
+- [ ] Toggle between horizontal and vertical screen orientation.
+- [ ] Choose between "Niche" (recessed) or "Flat Wall" installation.
+- [ ] Input the distance from the floor to the screen center.
+- [ ] Adjust the niche depth if required.
 
-## Learn More
+### Project Information:
+- Fields for manual inputs:
+  - [ ] Project title
+  - [ ] Designer’s name
+  - [ ] Department
+  - [ ] Screen size
+  - [ ] Date
 
-To learn more about Next.js, take a look at the following resources:
+### Data Handling:
+- [ ] Ability to read equipment information from a CSV file (Download link provided).
+- [ ] Populate dropdowns with data from the CSV file.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### PDF Generation:
+- [ ] Allow users to download the drawing in PDF format.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Success Criteria:
+- [ ] The application should be easy to use.
+- [ ] The drawing should update in real-time as selections are made.
+- [ ] All measurements should be accurate and clearly displayed.
+- [ ] The interface should be clean and professional.
+- [ ] The code should be well-organized and commented.
 
-## Deploy on Vercel
+## What We’re Looking For:
+- [ ] Clean, organized code.
+- [ ] Attention to detail.
+- [ ] Understanding of user experience.
+- [ ] Problem-solving skills.
+- [ ] Ability to create a practical tool for real-world use.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Notes:
+- [ ] Feel free to ask questions if anything is unclear.
+- [ ] Focus on functionality first, then enhance the visual design.
+- [ ] Test your work thoroughly.
+- [ ] Consider how installation teams will use this tool in the field.

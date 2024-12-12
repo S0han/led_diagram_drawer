@@ -9,8 +9,10 @@ export default function Configuration({ dropDownData }) {
     return (
         <div className='configuration-box'>
             <DropDown options={screen_models} label="Select Model" />
-            <ToggleBtn options={["btn1", "btn2"]} />
+            <ToggleBtn options={["Vertical", "Horizontal"]} />
+            <ToggleBtn options={["Niche", "Flat Wall"]} />
             <Inputfield labelName={"Floor Distance"} />
+            <Inputfield labelName={"Niche Depth Var"} />
         </div>
     )
 }

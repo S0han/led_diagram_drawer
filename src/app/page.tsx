@@ -3,10 +3,12 @@ import React, { useState, useEffect } from 'react';
 import Papa from 'papaparse';
 
 import Configuration from './components/Configuration.component';
+import Description from './components/Description.component';
+import DownloadButton from './components/DownloadButton.component';
+
 import ScreenDimensions from './components/ScreenDimensions.component';
 import NicheDimensions from './components/NicheDimensions.component';
 import ReceptacleDimensions from './components/ReceptacleDimensions.component';
-import Description from './components/Description.component';
 import DrawingInfo from './components/DrawingInfo.component';
 
 export default function Home() {
@@ -52,6 +54,8 @@ export default function Home() {
     <div>
       <Configuration dropDownData={data} />
       <Description />
+      <DownloadButton />
+      
       <ScreenDimensions />
       <NicheDimensions />
       <ReceptacleDimensions />

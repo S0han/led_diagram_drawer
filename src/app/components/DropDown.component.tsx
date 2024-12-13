@@ -5,7 +5,7 @@ export default function DropDown({ options, label }) {
                 {label}
                 <select>
                     {
-                        options.map((item, index) => (
+                        options.map((item: string, index: number) => (
                             <option key={index} value={item}>{item}</option>
                         ))
                     }

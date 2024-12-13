@@ -4,6 +4,7 @@ import Papa from 'papaparse';
 
 import Configuration from './components/Configuration.component';
 import ScreenDimensions from './components/ScreenDimensions.component';
+import NicheDimensions from './components/NicheDimensions.component';
 
 export default function Home() {
   const [data, setData] = useState<any[]>([]);
@@ -25,7 +26,7 @@ export default function Home() {
           dynamicTyping: true,  
           skipEmptyLines: true,  
           complete: (result) => {
-            const sanitizedData = result.data.map((row) =>
+            const sanitizedData = result.data.map((row: any) =>
               Object.fromEntries(
                 Object.entries(row).map(
                   ([key, value]) => [key.replace(/[^\w]/g, '_'), value]  
@@ -47,7 +48,8 @@ export default function Home() {
   return (
     <div>
       <Configuration dropDownData={data} />
-      <ScreenDimensions defaultData={data} />
+      <ScreenDimensions />
+      <NicheDimensions />
     </div>
   )
 }

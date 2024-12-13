@@ -1,11 +1,11 @@
 import InputField from './InputField.component';
 
-export default function ScreenDimensions() {
+export default function NicheDimensions() {
     return (
         <div>
             <InputField labelName = {"Height"}/>
             <InputField labelName = {"Width"}/>
-            <InputField labelName = {"Floor Line"}/>
+            <InputField labelName = {"Depth"}/>
         </div>
     );
 }

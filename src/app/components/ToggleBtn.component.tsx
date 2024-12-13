@@ -3,14 +3,14 @@ import { useState } from "react";
 export default function ToggleBtn({ options }) {
     const [selected, setSelected] = useState(options[0]);
 
-    const handleToggle = (option) => {
+    const handleToggle = (option: any) => {
         setSelected(option);
     }
 
     return (
         <div className="toggle-options">
            {
-                options.map((option) => (
+                options.map((option: any) => (
                     <button 
                         key={option}
                         className={`toggle-btn ${
@@ -22,5 +22,5 @@ export default function ToggleBtn({ options }) {
                 ))   
             }
         </div>
-    )
+    );
 }

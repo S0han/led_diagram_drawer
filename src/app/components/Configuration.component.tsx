@@ -4,7 +4,7 @@ import Inputfield from './InputField.component';
 
 export default function Configuration({ dropDownData }) {
     
-    const screen_models = [...new Set(dropDownData.map((item) => item.Screen_MFR))];
+    const screen_models = [...new Set(dropDownData.map((item: any) => item.Screen_MFR))];
 
     return (
         <div className='configuration-box'>
@@ -14,5 +14,5 @@ export default function Configuration({ dropDownData }) {
             <Inputfield labelName={"Floor Distance"} />
             <Inputfield labelName={"Niche Depth Var"} />
         </div>
-    )
+    );
 }

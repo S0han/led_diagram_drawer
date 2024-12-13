@@ -12,10 +12,7 @@ Create a user-friendly mini application that provides a PDF drawing to install L
 
 ### Equipment Selection from CSV file:
 - Dropdown menus to select:
-  - [ ] LED Screen model
-  - [ ] Mount type
-  - [ ] Media Player (mini computer)
-  - [ ] Receptacle box (power outlet box)
+  - [X] LED Screen model
 
 ### Drawing Display:
 - Simple diagram of the LED screen:

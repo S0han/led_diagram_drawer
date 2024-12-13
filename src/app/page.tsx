@@ -1,7 +1,9 @@
 'use client'
 import React, { useState, useEffect } from 'react';
-import Configuration from './components/Configuration.component';
 import Papa from 'papaparse';
+
+import Configuration from './components/Configuration.component';
+import ScreenDimensions from './components/ScreenDimensions.component';
 
 export default function Home() {
   const [data, setData] = useState<any[]>([]);
@@ -45,6 +47,7 @@ export default function Home() {
   return (
     <div>
       <Configuration dropDownData={data} />
+      <ScreenDimensions defaultData={data} />
     </div>
   )
 }

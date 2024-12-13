@@ -10,6 +10,7 @@ import ScreenDimensions from './components/ScreenDimensions.component';
 import NicheDimensions from './components/NicheDimensions.component';
 import ReceptacleDimensions from './components/ReceptacleDimensions.component';
 import DrawingInfo from './components/DrawingInfo.component';
+import DynamicDrawing from './components/DynamicDrawing.component';
 
 export default function Home() {
   const [data, setData] = useState<any[]>([]);
@@ -60,6 +61,7 @@ export default function Home() {
       <NicheDimensions />
       <ReceptacleDimensions />
       <DrawingInfo />
+      <DynamicDrawing />
     </div>
   )
 }

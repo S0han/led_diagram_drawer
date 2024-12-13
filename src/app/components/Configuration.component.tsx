@@ -12,11 +12,11 @@ export default function Configuration({ dropDownData }) {
                 <p>CONFIGURATION</p>
             </div>
             <div>
-                <DropDown options={screen_models} label="Select Model" />
-                <ToggleBtn options={["Vertical", "Horizontal"]} />
-                <ToggleBtn options={["Niche", "Flat Wall"]} />
-                <Inputfield labelName={"Floor Distance"} />
-                <Inputfield labelName={"Niche Depth Var"} />
+                <DropDown options={screen_models} label="Select Model"/>
+                <ToggleBtn options={["Vertical", "Horizontal"]}/>
+                <ToggleBtn options={["Niche", "Flat Wall"]}/>
+                <Inputfield labelName={"Floor Distance"}/>
+                <Inputfield labelName={"Niche Depth Var"}/>
             </div>
         </div>
     );

@@ -7,9 +7,9 @@ export default function NicheDimensions() {
                 <p>NICHE DIMENSIONS:</p>
             </div>
             <div>
-                <InputField labelName = {"Height"}/>
-                <InputField labelName = {"Width"}/>
-                <InputField labelName = {"Depth"}/>
+                <InputField labelName={"Height"}/>
+                <InputField labelName={"Width"}/>
+                <InputField labelName={"Depth"}/>
             </div>
         </div>
     );

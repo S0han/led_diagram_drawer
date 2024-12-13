@@ -5,13 +5,6 @@ import Papa from 'papaparse';
 import Configuration from './components/Configuration.component';
 import Description from './components/Description.component';
 import DownloadButton from './components/DownloadButton.component';
-
-import ScreenDimensions from './components/ScreenDimensions.component';
-import NicheDimensions from './components/NicheDimensions.component';
-import ReceptacleDimensions from './components/ReceptacleDimensions.component';
-import DrawingInfo from './components/DrawingInfo.component';
-import DynamicDrawing from './components/DynamicDrawing.component';
-
 import PrintableArea from './components/PrintableArea.component';
 
 export default function Home() {
@@ -55,16 +48,12 @@ export default function Home() {
   
   return (
     <div>
-      <Configuration dropDownData={data} />
-      <Description />
-      <DownloadButton />
-      <PrintableArea />
-      
-      <ScreenDimensions />
-      <NicheDimensions />
-      <ReceptacleDimensions />
-      <DrawingInfo />
-      <DynamicDrawing />
+      <div>
+        <Configuration dropDownData={data}/>
+        <Description/>
+        <DownloadButton/>
+      </div>
+      <PrintableArea dropDownData={data}/>
     </div>
-  )
+  );
 }

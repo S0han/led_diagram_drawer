@@ -7,9 +7,9 @@ export default function ScreenDimensions() {
                 <p>SCREEN DIMENSIONS:</p>
             </div>
             <div>
-                <InputField labelName = {"Height"}/>
-                <InputField labelName = {"Width"}/>
-                <InputField labelName = {"Floor Line"}/>
+                <InputField labelName={"Height"}/>
+                <InputField labelName={"Width"}/>
+                <InputField labelName={"Floor Line"}/>
             </div>
         </div>
     );

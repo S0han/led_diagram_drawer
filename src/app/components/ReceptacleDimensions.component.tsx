@@ -8,9 +8,9 @@ export default function ReceptacleDimensions() {
                 <textarea id="receptacle-notes"></textarea>
             </div>
             <div>
-                <InputField labelName = {"Height"}/>
-                <InputField labelName = {"Width"}/>
-                <InputField labelName = {"Depth"}/>
+                <InputField labelName={"Height"}/>
+                <InputField labelName={"Width"}/>
+                <InputField labelName={"Depth"}/>
             </div>
         </div>
     )

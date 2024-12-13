@@ -9,7 +9,7 @@ export default function InputField({ labelName }) {
     return (
         <div>
             <label>{labelName}</label>
-            <input className="config-inputs" onChange={handleChange} />
+            <input className="config-inputs" onChange={handleChange}/>
         </div>
     );
 }

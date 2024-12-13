@@ -6,6 +6,7 @@ import Configuration from './components/Configuration.component';
 import ScreenDimensions from './components/ScreenDimensions.component';
 import NicheDimensions from './components/NicheDimensions.component';
 import ReceptacleDimensions from './components/ReceptacleDimensions.component';
+import Description from './components/Description.component';
 
 export default function Home() {
   const [data, setData] = useState<any[]>([]);
@@ -52,6 +53,7 @@ export default function Home() {
       <ScreenDimensions />
       <NicheDimensions />
       <ReceptacleDimensions />
+      <Description />
     </div>
   )
 }

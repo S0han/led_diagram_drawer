@@ -32,15 +32,15 @@ Create a user-friendly mini application that provides a PDF drawing to install L
 
 ### Project Information:
 - Fields for manual inputs:
-  - [ ] Project title
-  - [ ] Designer’s name
-  - [ ] Department
-  - [ ] Screen size
-  - [ ] Date
+  - [X] Project title
+  - [X] Designer’s name
+  - [X] Department
+  - [X] Screen size
+  - [X] Date
 
 ### Data Handling:
-- [ ] Ability to read equipment information from a CSV file (Download link provided).
-- [ ] Populate dropdowns with data from the CSV file.
+- [X] Ability to read equipment information from a CSV file (Download link provided).
+- [X] Populate dropdowns with data from the CSV file.
 
 ### PDF Generation:
 - [ ] Allow users to download the drawing in PDF format.
@@ -58,9 +58,3 @@ Create a user-friendly mini application that provides a PDF drawing to install L
 - [ ] Understanding of user experience.
 - [ ] Problem-solving skills.
 - [ ] Ability to create a practical tool for real-world use.
-
-## Notes:
-- [ ] Feel free to ask questions if anything is unclear.
-- [ ] Focus on functionality first, then enhance the visual design.
-- [ ] Test your work thoroughly.
-- [ ] Consider how installation teams will use this tool in the field.

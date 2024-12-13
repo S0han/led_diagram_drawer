@@ -4,7 +4,8 @@ export default function ReceptacleDimensions() {
     return (
         <div>
             <div>
-                <h3>Notes:</h3>
+                <p>NOTES</p>
+                <textarea id="receptacle-notes"></textarea>
             </div>
             <div>
                 <InputField labelName = {"Height"}/>

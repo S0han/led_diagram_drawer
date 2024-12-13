@@ -7,6 +7,7 @@ import ScreenDimensions from './components/ScreenDimensions.component';
 import NicheDimensions from './components/NicheDimensions.component';
 import ReceptacleDimensions from './components/ReceptacleDimensions.component';
 import Description from './components/Description.component';
+import DrawingInfo from './components/DrawingInfo.component';
 
 export default function Home() {
   const [data, setData] = useState<any[]>([]);
@@ -50,10 +51,11 @@ export default function Home() {
   return (
     <div>
       <Configuration dropDownData={data} />
+      <Description />
       <ScreenDimensions />
       <NicheDimensions />
       <ReceptacleDimensions />
-      <Description />
+      <DrawingInfo />
     </div>
   )
 }

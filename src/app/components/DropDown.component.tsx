@@ -1,9 +1,9 @@
-export default function DropDown({ options, label }) {
+export default function DropDown({ options, label, onChange }) {
     return (
         <div>
             <label>
                 {label}
-                <select>
+                <select onChange={onChange}>
                     {
                         options.map((item: string, index: number) => (
                             <option key={index} value={item}>{item}</option>

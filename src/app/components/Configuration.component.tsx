@@ -2,9 +2,13 @@ import DropDown from './DropDown.component';
 import ToggleBtn from './ToggleBtn.component';
 import Inputfield from './InputField.component';
 
-export default function Configuration({ dropDownData }) {
+export default function Configuration({ dropDownData, onModelChange }) {
     
     const screen_models = [...new Set(dropDownData.map((item: any) => item.Screen_MFR))];
+
+    const handleModelChange = (e) => {
+        onModelChange(e.target.value);
+    }
 
     return (
         <div>
@@ -12,11 +16,9 @@ export default function Configuration({ dropDownData }) {
                 <p>CONFIGURATION</p>
             </div>
             <div>
-                <DropDown options={screen_models} label="Select Model"/>
+                <DropDown options={screen_models} label="Select Model" onChange={handleModelChange}/>
                 <ToggleBtn options={["Vertical", "Horizontal"]}/>
-                <ToggleBtn options={["Niche", "Flat Wall"]}/>
                 <Inputfield labelName={"Floor Distance"}/>
-                <Inputfield labelName={"Niche Depth Var"}/>
             </div>
         </div>
     );

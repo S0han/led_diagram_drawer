@@ -9,6 +9,7 @@ import PrintableArea from './components/PrintableArea.component';
 
 export default function Home() {
   const [data, setData] = useState<any[]>([]);
+  const [selectedModel, setSelectedModel] = useState('');
 
   useEffect(() => {
     const fetchData = async () => {
@@ -49,11 +50,11 @@ export default function Home() {
   return (
     <div>
       <div>
-        <Configuration dropDownData={data}/>
+        <Configuration dropDownData={data} onModelChange={setSelectedModel}/>
         <Description/>
         <DownloadButton/>
       </div>
-      <PrintableArea dropDownData={data}/>
+      <PrintableArea dropDownData={data} selectedModel={selectedModel}/>
     </div>
   );
 }

@@ -1,10 +1,10 @@
 import ScreenDimensions from './ScreenDimensions.component';
-import NicheDimensions from './NicheDimensions.component';
-import ReceptacleDimensions from './ReceptacleDimensions.component';
 import DrawingInfo from './DrawingInfo.component';
 import DynamicDrawing from './DynamicDrawing.component';
 
-export default function PrintableArea({ dropDownData }) {
+export default function PrintableArea({ dropDownData, selectedModel }) {
+    const selectedData = dropDownData.find(item => item.Screen_MFR === selectedModel);
+
     return(
         <div className="printable-sheet">
             <div className="drawing-side">
@@ -12,11 +12,9 @@ export default function PrintableArea({ dropDownData }) {
             </div>
             <div className="non-drawing-side">
                 <div>
-                    <NicheDimensions />
-                    <ScreenDimensions/>
+                    <ScreenDimensions screenData={selectedData} />
                 </div>
                 <div>
-                    <ReceptacleDimensions/>
                     <DrawingInfo/>
                 </div>
             </div>

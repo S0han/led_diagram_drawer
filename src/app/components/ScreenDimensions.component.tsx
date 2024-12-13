@@ -1,6 +1,6 @@
 import InputField from './InputField.component';
 
-export default function ScreenDimensions() {
+export default function ScreenDimensions({ screenData }) {
     return (
         <div>
             <div>

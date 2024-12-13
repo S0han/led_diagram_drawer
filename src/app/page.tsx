@@ -5,6 +5,7 @@ import Papa from 'papaparse';
 import Configuration from './components/Configuration.component';
 import ScreenDimensions from './components/ScreenDimensions.component';
 import NicheDimensions from './components/NicheDimensions.component';
+import ReceptacleDimensions from './components/ReceptacleDimensions.component';
 
 export default function Home() {
   const [data, setData] = useState<any[]>([]);
@@ -50,6 +51,7 @@ export default function Home() {
       <Configuration dropDownData={data} />
       <ScreenDimensions />
       <NicheDimensions />
+      <ReceptacleDimensions />
     </div>
   )
 }

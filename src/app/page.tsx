@@ -12,6 +12,8 @@ import ReceptacleDimensions from './components/ReceptacleDimensions.component';
 import DrawingInfo from './components/DrawingInfo.component';
 import DynamicDrawing from './components/DynamicDrawing.component';
 
+import PrintableArea from './components/PrintableArea.component';
+
 export default function Home() {
   const [data, setData] = useState<any[]>([]);
 
@@ -56,6 +58,7 @@ export default function Home() {
       <Configuration dropDownData={data} />
       <Description />
       <DownloadButton />
+      <PrintableArea />
       
       <ScreenDimensions />
       <NicheDimensions />

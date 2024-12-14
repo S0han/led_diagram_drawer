@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import DropDown from './DropDown.component';
-import ToggleBtn from './ToggleBtn.component';
 
 export default function Configuration({ dropDownData, onModelChange, onFlrDistChange }) {  
     const screen_models = [...new Set(dropDownData.map((item: any) => item.Screen_MFR))];
@@ -28,7 +27,6 @@ export default function Configuration({ dropDownData, onModelChange, onFlrDistCh
                     label="Select Model" 
                     onChange={(e) => onModelChange(e.target.value)}
                 />
-                <ToggleBtn options={["Vertical", "Horizontal"]}/>
                 <div>
                     <label htmlFor="floorDistance">Floor Distance</label>
                     <input

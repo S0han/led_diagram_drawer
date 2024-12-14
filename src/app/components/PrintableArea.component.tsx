@@ -2,7 +2,7 @@ import ScreenDimensions from './ScreenDimensions.component';
 import DrawingInfo from './DrawingInfo.component';
 import DynamicDrawing from './DynamicDrawing.component';
 
-export default function PrintableArea({ dropDownData, selectedModel, selectedFloorDistance }) {
+export default function PrintableArea({ dropDownData, selectedModel, selectedFloorDistance, description }) {
     const selectedData = dropDownData.find(item => item.Screen_MFR === selectedModel);
     
     return(
@@ -18,7 +18,7 @@ export default function PrintableArea({ dropDownData, selectedModel, selectedFlo
                     />
                 </div>
                 <div>
-                    <DrawingInfo/>
+                    <DrawingInfo description={description}/>
                 </div>
             </div>
         </div>

@@ -1,4 +1,4 @@
-export default function DrawingInfo() {
+export default function DrawingInfo({ description }) {
     return(
         <div className="drawing-info-box">
             <div>
@@ -9,19 +9,21 @@ export default function DrawingInfo() {
                     <p>Logo</p>
                 </div>
                 <div className="address">
-                    <p>address</p>
+                    <p>123 Rainbowflower Rd</p>
+                    <p>MissingCity, Ontario</p>
+                    <p>${`(`}182{`)`} XXX-XXXX</p>
                 </div>
                 <div>
                     <div className="desc">
                         <p>Description:</p>
                     </div>
-                    <p></p>
+                    <p>{description.title}</p>
                 </div>
             </div>
             <div>
                 <div className="drawn">
                     <p>Drawn</p>
-                    <p></p>
+                    <p>{description.drawer}</p>
                 </div>
                 <div className="units">
                     <p>Dimensions in inches</p>
@@ -29,15 +31,11 @@ export default function DrawingInfo() {
                 <div>
                     <p>sketch</p>
                 </div>
-                <div>
-                    <p>Screen Size</p>
-                    <p></p>
-                </div>
             </div>
             <div>
                 <div className="date">
                     <p>Date</p>
-                    <p></p>
+                    <p>{description.date}</p>
                 </div>
                 <div className="sheet-number">
                     <p>Sheet</p>
@@ -49,7 +47,7 @@ export default function DrawingInfo() {
                 </div>
                 <div className="department">
                     <p>Department</p>
-                    <p>Installs</p>
+                    <p>{description.department}</p>
                 </div>
             </div>
         </div>

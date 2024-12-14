@@ -11,6 +11,12 @@ export default function Home() {
   const [data, setData] = useState<any[]>([]);
   const [selectedModel, setSelectedModel] = useState('');
   const [floorDistance, setFloorDistance] = useState('');
+  const [description, setDescription] = useState({
+    title: '',
+    drawer: '',
+    department: '',
+    date: ''
+  });
 
   useEffect(() => {
     const fetchData = async () => {
@@ -56,11 +62,12 @@ export default function Home() {
           onFlrDistChange={setFloorDistance} 
           onModelChange={setSelectedModel}
         />
-        <Description/>
+        <Description onDescriptionChange={setDescription}/>
         <DownloadButton/>
       </div>
       <PrintableArea 
         selectedFloorDistance={floorDistance} 
+        description={description}
         dropDownData={data} 
         selectedModel={selectedModel}
       />

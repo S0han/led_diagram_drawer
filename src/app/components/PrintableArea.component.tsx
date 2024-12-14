@@ -8,7 +8,11 @@ export default function PrintableArea({ dropDownData, selectedModel, selectedFlo
     return(
         <div className="printable-sheet">
             <div className="drawing-side">
-                <DynamicDrawing />
+                <DynamicDrawing 
+                    height={selectedData?.Height} 
+                    width={selectedData?.Width} 
+                    floorDistance={selectedFloorDistance}
+                />
             </div>
             <div className="non-drawing-side">
                 <div>

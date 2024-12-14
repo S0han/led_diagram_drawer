@@ -10,6 +10,7 @@ import PrintableArea from './components/PrintableArea.component';
 export default function Home() {
   const [data, setData] = useState<any[]>([]);
   const [selectedModel, setSelectedModel] = useState('');
+  const [floorDistance, setFloorDistance] = useState('');
 
   useEffect(() => {
     const fetchData = async () => {
@@ -50,11 +51,19 @@ export default function Home() {
   return (
     <div>
       <div>
-        <Configuration dropDownData={data} onModelChange={setSelectedModel}/>
+        <Configuration 
+          dropDownData={data} 
+          onFlrDistChange={setFloorDistance} 
+          onModelChange={setSelectedModel}
+        />
         <Description/>
         <DownloadButton/>
       </div>
-      <PrintableArea dropDownData={data} selectedModel={selectedModel}/>
+      <PrintableArea 
+        selectedFloorDistance={floorDistance} 
+        dropDownData={data} 
+        selectedModel={selectedModel}
+      />
     </div>
   );
 }

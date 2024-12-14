@@ -1,4 +1,4 @@
-export default function InputField({ labelName }) {
+export default function InputField({ labelName, defaultData }) {
     const handleChange = (e) => {
         const val = e.target.value;
         if (!/^\d*\.?\d*$/.test(val)) {
@@ -9,7 +9,7 @@ export default function InputField({ labelName }) {
     return (
         <div>
             <label>{labelName}</label>
-            <input className="config-inputs" onChange={handleChange}/>
+            <input defaultValue={defaultData} className="config-inputs" onChange={handleChange}/>
         </div>
     );
 }

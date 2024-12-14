@@ -11,7 +11,7 @@ export default function DrawingInfo({ description }) {
                 <div className="address">
                     <p>123 Rainbowflower Rd</p>
                     <p>MissingCity, Ontario</p>
-                    <p>${`(`}182{`)`} XXX-XXXX</p>
+                    <p>(182) XXX-XXXX</p>
                 </div>
                 <div>
                     <div className="desc">

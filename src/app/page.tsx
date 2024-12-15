@@ -71,7 +71,9 @@ export default function Home() {
             onModelChange={setSelectedModel}
         />
         <Description onDescriptionChange={setDescription}/>
-        <DownloadButton/>
+        <div className="flex justify-center">
+          <DownloadButton/>
+        </div>
       </div>
     </div>
   );

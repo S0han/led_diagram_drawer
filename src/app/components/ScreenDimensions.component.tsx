@@ -11,12 +11,18 @@ export default function ScreenDimensions({ screenData, flrDistanceData }) {
     return (
         <div>
             <div>
-                <p>SCREEN DIMENSIONS:</p>
+                <p className="font-bold">SCREEN DIMENSIONS</p>
             </div>
             <div>
-                <InputField defaultData={defaultScreenHeight} labelName={"Height"}/>
-                <InputField defaultData={defaultScreenWidth} labelName={"Width"}/>
-                <DisplayBox value={flrDistanceData} labelName={"Floor Line"}/>
+                <div className="py-1">
+                    <InputField defaultData={defaultScreenHeight} labelName={"Height:"}/>
+                </div>
+                <div className="py-1">
+                    <InputField defaultData={defaultScreenWidth} labelName={"Width:"}/>
+                </div>
+                <div  className="py-1">
+                    <DisplayBox value={flrDistanceData} labelName={"Floor Line:"}/>
+                </div>
             </div>
         </div>
     );

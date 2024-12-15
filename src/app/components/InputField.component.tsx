@@ -7,9 +7,13 @@ export default function InputField({ labelName, defaultData }) {
     }
     
     return (
-        <div>
+        <div className="flex items-center space-x-2">
             <label>{labelName}</label>
-            <input defaultValue={defaultData} className="config-inputs" onChange={handleChange}/>
+            <input 
+                defaultValue={defaultData} 
+                className="config-inputs w-12" 
+                onChange={handleChange}
+            />
         </div>
     );
 }

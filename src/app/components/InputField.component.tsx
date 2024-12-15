@@ -10,7 +10,8 @@ export default function InputField({ labelName, defaultData }) {
         <div className="flex items-center space-x-2">
             <label>{labelName}</label>
             <input 
-                defaultValue={defaultData} 
+                defaultValue={defaultData}
+                readOnly 
                 className="config-inputs w-12" 
                 onChange={handleChange}
             />

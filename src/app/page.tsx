@@ -55,8 +55,16 @@ export default function Home() {
   }, []); 
   
   return (
-    <div>
-      <div>
+    <div className="flex flex-col md:flex-row h-screen">
+      <div className="flex-grow md:w-2/ w-full p-4 border-b md:border-b-0 m:border-r border-gray-300">
+        <PrintableArea 
+          selectedFloorDistance={floorDistance} 
+          description={description}
+          dropDownData={data} 
+          selectedModel={selectedModel}
+        />
+      </div>
+      <div className="md:w-1/3 w-full flex flex-col space-y-4 p-4">
         <Configuration 
           dropDownData={data} 
           onFlrDistChange={setFloorDistance} 
@@ -65,12 +73,6 @@ export default function Home() {
         <Description onDescriptionChange={setDescription}/>
         <DownloadButton/>
       </div>
-      <PrintableArea 
-        selectedFloorDistance={floorDistance} 
-        description={description}
-        dropDownData={data} 
-        selectedModel={selectedModel}
-      />
     </div>
   );
 }

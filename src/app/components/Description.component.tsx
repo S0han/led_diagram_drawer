@@ -11,7 +11,7 @@ export default function Description({ onDescriptionChange }) {
             </div>
             <div className="flex flex-col space-y-2">
                 <label className="flex flex-col">
-                    {"Title"}
+                    {"Title:"}
                     <input
                         name="title"
                         onChange={handleInputChange}
@@ -19,7 +19,7 @@ export default function Description({ onDescriptionChange }) {
                     />
                 </label>
                 <label className="flex flex-col">
-                    {"Drawer"}
+                    {"Drawer:"}
                     <input
                         name="drawer"
                         onChange={handleInputChange}
@@ -27,7 +27,7 @@ export default function Description({ onDescriptionChange }) {
                     />
                 </label>
                 <label className="flex flex-col">
-                    {"Department"}
+                    {"Department:"}
                     <input
                         name="department"
                         onChange={handleInputChange}
@@ -35,7 +35,7 @@ export default function Description({ onDescriptionChange }) {
                     />
                 </label>
                 <label className="flex flex-col">
-                    {"Date"}
+                    {"Date:"}
                     <input
                         name="date"
                         onChange={handleInputChange}

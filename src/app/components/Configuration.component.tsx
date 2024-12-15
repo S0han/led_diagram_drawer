@@ -29,13 +29,13 @@ export default function Configuration({ dropDownData, onModelChange, onFlrDistCh
                 />
             </div>
             <div className="w-full flex flex-col space-y-2">
-                <label htmlFor="floorDistance" className="font-semibold">Floor Distance</label>
+                <label htmlFor="floorDistance">Floor Distance:</label>
                 <input
                     id="floorDistance"
                     type="text"
                     value={floorDistance}
                     onChange={handleFloorDistanceChange}
-                    className="border rounded-md p-2 w-full"
+                    className="border rounded-md p-2 w-full focus:outline-none focus:ring focus:ring-blue-200"
                 />
             </div>
         </div>

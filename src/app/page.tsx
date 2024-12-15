@@ -64,11 +64,11 @@ export default function Home() {
           selectedModel={selectedModel}
         />
       </div>
-      <div className="md:w-1/3 border w-full flex flex-col space-y-4 m-2 p-4">
+      <div className="md:w-1/3 w-full flex flex-col space-y-4 p-2">
         <Configuration 
-          dropDownData={data} 
-          onFlrDistChange={setFloorDistance} 
-          onModelChange={setSelectedModel}
+            dropDownData={data} 
+            onFlrDistChange={setFloorDistance} 
+            onModelChange={setSelectedModel}
         />
         <Description onDescriptionChange={setDescription}/>
         <DownloadButton/>

@@ -14,28 +14,29 @@ export default function Configuration({ dropDownData, onModelChange, onFlrDistCh
 
         setFloorDistance(newValue);
         onFlrDistChange(newValue);
-    }
+    };
 
     return (
-        <div>
-            <div>
-                <p>CONFIGURATION</p>
+        <div className="border p-4 flex flex-col space-y-4">
+            <div className="w-full">
+                <p className="font-bold">CONFIGURATION</p>
             </div>
-            <div>
+            <div className="w-full">
                 <DropDown 
                     options={screen_models} 
                     label="Select Model" 
                     onChange={(e) => onModelChange(e.target.value)}
                 />
-                <div>
-                    <label htmlFor="floorDistance">Floor Distance</label>
-                    <input
-                        type="text"
-                        value={floorDistance}
-                        onChange={handleFloorDistanceChange}
-                        className="config-inputs"
-                    />
-                </div>
+            </div>
+            <div className="w-full flex flex-col space-y-2">
+                <label htmlFor="floorDistance" className="font-semibold">Floor Distance</label>
+                <input
+                    id="floorDistance"
+                    type="text"
+                    value={floorDistance}
+                    onChange={handleFloorDistanceChange}
+                    className="border rounded-md p-2 w-full"
+                />
             </div>
         </div>
     );

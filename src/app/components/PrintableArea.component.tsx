@@ -15,7 +15,7 @@ export default function PrintableArea({ dropDownData, selectedModel, selectedFlo
                 />
             </div>
             <div className="flex-1 flex flex-col justify-between p-4">
-                <div className="border border-black p-2">
+                <div className="border border-black p-2 max-w-[250px]">
                     <ScreenDimensions 
                         flrDistanceData={selectedFloorDistance} 
                         screenData={selectedData}

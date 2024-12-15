@@ -24,7 +24,7 @@ export default function Configuration({ dropDownData, onModelChange, onFlrDistCh
             <div className="w-full">
                 <DropDown 
                     options={screen_models} 
-                    label="Select Model" 
+                    label="Select Model:" 
                     onChange={(e) => onModelChange(e.target.value)}
                 />
             </div>
@@ -35,7 +35,7 @@ export default function Configuration({ dropDownData, onModelChange, onFlrDistCh
                     type="text"
                     value={floorDistance}
                     onChange={handleFloorDistanceChange}
-                    className="border rounded-md p-2 w-full focus:outline-none focus:ring focus:ring-blue-200"
+                    className="border border-gray-300 rounded-md p-2 w-full focus:outline-none focus:ring focus:ring-blue-200"
                 />
             </div>
         </div>

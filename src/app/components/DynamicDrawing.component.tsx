@@ -1,13 +1,13 @@
 export default function DynamicDrawing({ height = 0, width = 0, floorDistance = 0 }) {
-    const SVG_SIZE = 600;
+    const SVG_SIZE = 400;
     const rectScalingFactor = 0.6;
-    const minRectHeight = 250;
+    const minRectHeight = 100;
     const scaledHeight = Math.max(height * rectScalingFactor, minRectHeight);
     const scaledWidth = SVG_SIZE * rectScalingFactor;
     const scaledFloorDistance = floorDistance > 0 ? floorDistance : 0;
 
     return (
-        <svg width={SVG_SIZE} height={SVG_SIZE} style={{ border: "1px solid black" }}>
+        <svg width={SVG_SIZE} height={SVG_SIZE} style={{ borderBottom: "1px solid black" }}>
             <rect 
                 x={(SVG_SIZE - scaledWidth) / 2}
                 y={50}

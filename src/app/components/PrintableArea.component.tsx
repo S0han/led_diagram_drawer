@@ -7,7 +7,7 @@ export default function PrintableArea({ dropDownData, selectedModel, selectedFlo
     
     return(
         <div className="flex w-full h-[calc(100vh-4rem)]">
-            <div className="flex-1 p-4 border-r">
+            <div className="flex-1 p-4">
                 <DynamicDrawing 
                     height={selectedData?.Height} 
                     width={selectedData?.Width} 
@@ -15,13 +15,13 @@ export default function PrintableArea({ dropDownData, selectedModel, selectedFlo
                 />
             </div>
             <div className="flex-1 flex flex-col justify-between p-4">
-                <div className="bg-blue-100 p-2">
+                <div className="border border-black p-2">
                     <ScreenDimensions 
                         flrDistanceData={selectedFloorDistance} 
                         screenData={selectedData}
                     />
                 </div>
-                <div className="bg-green-100 p-2">
+                <div className="border border-black p-2">
                     <DrawingInfo description={description}/>
                 </div>
             </div>

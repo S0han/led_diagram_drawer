@@ -56,7 +56,7 @@ export default function Home() {
   
   return (
     <div className="flex flex-col md:flex-row h-screen">
-      <div className="flex-grow md:w-2/ w-full p-4 border-b md:border-b-0 m:border-r border-gray-300">
+      <div className="flex-grow border md:w-2/ w-full m-2 p-4">
         <PrintableArea 
           selectedFloorDistance={floorDistance} 
           description={description}
@@ -64,7 +64,7 @@ export default function Home() {
           selectedModel={selectedModel}
         />
       </div>
-      <div className="md:w-1/3 w-full flex flex-col space-y-4 p-4">
+      <div className="md:w-1/3 border w-full flex flex-col space-y-4 m-2 p-4">
         <Configuration 
           dropDownData={data} 
           onFlrDistChange={setFloorDistance} 

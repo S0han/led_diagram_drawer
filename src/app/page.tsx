@@ -1,5 +1,5 @@
 'use client'
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Papa from 'papaparse';
 
 import Configuration from './components/Configuration.component';
@@ -17,6 +17,8 @@ export default function Home() {
     department: '',
     date: ''
   });
+
+  const printableAreaRef = useRef(null);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -57,7 +59,8 @@ export default function Home() {
   return (
     <div className="flex flex-col md:flex-row h-screen">
       <div className="flex-grow border md:w-2/ w-full m-2 p-4">
-        <PrintableArea 
+        <PrintableArea
+          ref={printableAreaRef} 
           selectedFloorDistance={floorDistance} 
           description={description}
           dropDownData={data} 
@@ -72,7 +75,7 @@ export default function Home() {
         />
         <Description onDescriptionChange={setDescription}/>
         <div className="flex justify-center">
-          <DownloadButton/>
+          <DownloadButton contentRef={printableAreaRef}/>
         </div>
       </div>
     </div>

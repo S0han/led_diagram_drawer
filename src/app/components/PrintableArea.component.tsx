@@ -1,12 +1,13 @@
+import React, { forwardRef } from 'react';
 import ScreenDimensions from './ScreenDimensions.component';
 import DrawingInfo from './DrawingInfo.component';
 import DynamicDrawing from './DynamicDrawing.component';
 
-export default function PrintableArea({ dropDownData, selectedModel, selectedFloorDistance, description }) {
+const PrintableArea = forwardRef(({ dropDownData, selectedModel, selectedFloorDistance, description }, ref) => {
     const selectedData = dropDownData.find(item => item.Screen_MFR === selectedModel);
     
     return(
-        <div className="flex w-full h-[calc(100vh-4rem)]">
+        <div className="flex w-full h-[calc(100vh-4rem)]" ref={ref}>
             <div className="flex-1 p-4">
                 <DynamicDrawing 
                     height={selectedData?.Height} 
@@ -27,4 +28,6 @@ export default function PrintableArea({ dropDownData, selectedModel, selectedFlo
             </div>
         </div>
     )
-}
+});
+
+export default PrintableArea;
